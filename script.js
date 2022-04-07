@@ -24,7 +24,7 @@ fetch("https://rapidapi.com/googlecloud/api/google-translate1/").then(
 submit.addEventListener("click", function (e) {
   if (inputType.value != "null" || outputType.value != "null") {
     fetch(
-      `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${outputType.value}/${inputType.value}.json`
+      `https://rapidapi.com/googlecloud/api/google-translate1/${outputType.value}/${inputType.value}.json`
     ).then((response) =>
       response.json().then((res) => {
         let result = Object.keys(res).map((key) => [Number(key), res[key]]);

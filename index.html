@@ -15,9 +15,6 @@
             <option value="null" disabled selected>
               Kerakli so`zni kiriting......
             </option>
-            <!-- <option value="UZS">UZS</option>
-            <option value="USD">USD</option>
-            <option value="RUB">RUB</option> -->
           </select>
           <textarea
             name="number"
@@ -25,37 +22,25 @@
             cols="30"
             rows="10"
             class="qiymat"
-          ></textarea>
-          <!-- <input 
-          
-            type="number"
-            placeholder="Write here..."
-            class="qiymat"
-            value="0"
-          /> -->
-        </div>
-        <div class="output-side side">
-          <select name="output-type" id="output-type">
-            <option value="null" disabled selected>
-              Qaysi tilga tarjima qilasiz
-            </option>
-            <!-- <option value="uzs">UZS</option>
-            <option value="usd">USD</option>
-            <option value="rub">RUB</option> -->
-          </select>
-          <!-- <input type="number" class="natija" disabled value="0" /> -->
-          <textarea
-            name="number"
-            id=""
-            cols="30"
-            rows="10"
-            class="natija"
           ></textarea>
         </div>
       </div>
-      <button class="submit">Tekshirish</button>
+      <div id="google_translate_element"></div>
     </div>
 
     <script src="script.js"></script>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en" },
+          "google_translate_element"
+        );
+      }
+    </script>
+
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
   </body>
 </html>
